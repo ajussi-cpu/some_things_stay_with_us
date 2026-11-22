@@ -2,23 +2,197 @@
 <html lang="en">
 
 <head>
+    <!-- Defines the character encoding -->
     <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Some Things Stay With Us</title>
+
+    <!-- Connects the CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <!-- HEADER -->
+    <header class="header" id="home">
         <h1>Some Things Stay With Us</h1>
+        <p>on past relationships, regrets, and letting go</p>
     </header>
 
+    <!-- NAVIGATION -->
+    <nav class="navigation">
+        <div class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#articles">Articles</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <details class="mobile-nav">
+            <summary>☰ Menu</summary>
+            <div class="mobile-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#articles">Articles</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </details>
+    </nav>
+
+    <!-- MAIN CONTENT -->
     <main>
-        <p>A personal blog about memories, regrets, and moving forward.</p>
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome" id="about">
+
+            <div class="welcome-image">
+                <img src="images/hero.jpg" alt="Homepage landscape">
+            </div>
+
+            <div class="welcome-text">
+                <span class="eyebrow">Welcome</span>
+
+                <h2>Some Things Stay With Us</h2>
+
+                <p>
+                    Not every ending is easy to accept.
+                    Some memories stay longer than we expect,
+                    and some lessons stay for life.
+                </p>
+
+                <a href="#articles" class="main-button">
+                    Read the Latest
+                </a>
+            </div>
+
+        </section>
+
+        <!-- LATEST POSTS -->
+        <section class="latest-posts" id="articles">
+
+            <div class="section-title">
+                <span></span>
+                <h2>Latest Posts</h2>
+                <span></span>
+            </div>
+
+            <div class="post-container">
+
+                <!-- FIRST POST -->
+                <article class="post-card">
+
+                    <img src="images/memories.jpg" alt="Journal and memories">
+
+                    <div class="post-content">
+                        <h3>When the Past Still Feels Close</h3>
+
+                        <p>
+                            Holding on to memories that feel
+                            hard to let go.
+                        </p>
+
+                        <a href="#past">Read More →</a>
+                    </div>
+
+                </article>
+
+                <!-- SECOND POST -->
+                <article class="post-card">
+
+                    <img src="images/regrets.jpg" alt="Coffee on a quiet table">
+
+                    <div class="post-content">
+                        <h3>The Things We Wish We Could Change</h3>
+
+                        <p>
+                            What ifs, regrets, and the moments
+                            we replay.
+                        </p>
+
+                        <a href="#regrets">Read More →</a>
+                    </div>
+
+                </article>
+
+                <!-- THIRD POST -->
+                <article class="post-card">
+
+                    <img src="images/moving-forward.jpg" alt="Books and notebooks">
+
+                    <div class="post-content">
+                        <h3>Learning to Live With What Happened</h3>
+
+                        <p>
+                            Finding peace with the past
+                            and moving forward.
+                        </p>
+
+                        <a href="#moving-forward">Read More →</a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ARTICLE SECTIONS -->
+        <section class="articles">
+
+            <article id="past">
+                <span class="eyebrow">01 — Memories</span>
+                <h2>When the Past Still Feels Close</h2>
+
+                <p>
+                    Sometimes, memories return through a song,
+                    a familiar place, or a small detail we did
+                    not expect to remember. They remind us that
+                    certain moments mattered. Remembering does
+                    not always mean we want to go back.
+                    Sometimes, it simply means that the
+                    experience became part of our story.
+                </p>
+            </article>
+
+            <article id="regrets">
+                <span class="eyebrow">02 — Regrets</span>
+                <h2>The Things We Wish We Could Change</h2>
+
+                <p>
+                    It is easy to think about the words we
+                    could have said or the choices we might
+                    have made differently. Regret can teach us
+                    to understand ourselves better, but we
+                    should also learn to accept what we cannot
+                    change. We can learn from the past without
+                    rewriting it.
+                </p>
+            </article>
+
+            <article id="moving-forward">
+                <span class="eyebrow">03 — Moving Forward</span>
+                <h2>Learning to Live With What Happened</h2>
+
+                <p>
+                    Moving forward does not mean pretending
+                    that nothing happened. It means accepting
+                    that some questions may remain unanswered
+                    and choosing to make room for new
+                    experiences. We can carry the lessons
+                    with us while allowing life to keep moving.
+                </p>
+            </article>
+
+        </section>
+
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="heart">♡</div>
         <p>© 2026 Some Things Stay With Us</p>
     </footer>
 
